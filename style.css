@@ -1,0 +1,155 @@
+*{padding: 0;margin: 0;box-sizing: border-box;}
+body{
+	background-color: lightgoldenrodyellow;
+	height: 100vh;
+	display: flex; align-items: center; justify-content: center;
+}
+.card-index{
+	width: 20rem;
+	height: 20rem;
+	background-color: white;
+	display: flex;align-items: center;justify-content: center;
+	/* border-radius: 14px; */
+	border: 2px solid black;
+	box-shadow: 15px 15px 0px black;
+	transition: 0.5s;
+}
+.card-index-iner{
+	text-align: center;
+}
+.card-index-iner button{
+	min-width: 10rem;
+	margin-top: 0.5rem;
+	border-radius: 0;
+}
+.crad{
+	padding: 1rem;
+	width: 45rem;	
+	height: 25rem;
+	background-color: white;
+	display: grid;
+		border: 1px solid black;
+	box-shadow: 10px 10px 0px black;
+	grid-template-rows: 1fr 2fr;
+	position: relative;
+}
+.atas{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+}
+.bawah{
+}
+.kanan{
+	text-align: end;
+}
+.kanan button{
+	width: 5rem;
+	margin-top: 0.5rem;
+}
+.bawah button{
+	min-width: calc(90% / 2);
+	height: 40px;
+	border: 1px solid black;
+	margin: 1rem;
+}
+.bar{
+	margin-top: 1rem;
+	background-color: blue;
+	height: 0.5rem;
+	border-radius: 14px;
+	/* animation: bar 1s linear; */
+}
+.card-index:hover{
+	box-shadow: 8px 8px 0px black;
+}
+
+.card-liader-boadr{
+	min-width:45rem;
+	height: 35rem;
+	/* min-height: 35rem; */
+	/* max-height: 80rem; */
+	background-color: white;
+	border: 1px solid black;
+	box-shadow: 10px 10px 1px black;
+	padding: 1rem;
+	display: grid;
+	grid-template-rows: 1fr 5fr 0.5fr;
+}
+._atas{
+	text-align: center;
+}
+._atas .mode{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+._tengah{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+._bawah{
+	text-align: center;
+}
+._bawah > button{
+	width: 10rem;
+}
+._kiri{
+	padding-right: 0.5rem;
+}
+._kanan{
+	padding-left: 0.5rem;
+}
+._kanan h3, ._kiri h3{
+	text-align: center;
+}
+.hide{
+	display: none;
+}
+.pop{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	backdrop-filter: blur(8px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	display: none;
+}
+.pop_pause{
+	width: 10rem;
+	height: 10rem;
+	background-color: white;
+	border: 1px solid black;
+	box-shadow: 5px 5px 1px black;
+}
+.pop_pause h3,.input h4{
+	margin-top: 1rem;
+	text-align: center;
+}
+.pop_pause button{
+	margin-left: 25px;
+}
+.input{
+		width: 20rem;
+	height: 20rem;
+	/* min-height: max-content; */
+	background-color: white;
+	border: 1px solid black;
+	box-shadow: 5px 5px 1px black;
+	padding: 1rem;
+}
+.input input{
+	width: 100%;
+}
+.input button{
+	margin-top: .5rem;
+	margin-left: 70px;
+}
+@keyframes bar {
+	0%{
+		width: 100%;
+	}
+	100%{
+		width: 0%;
+	}
+
+}
